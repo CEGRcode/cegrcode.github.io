@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="container">
+  <h3>{{ page.name }}</h3>
+  <p>Add bio, links to portfolio website (if has one) & social links.</p>
+
+  {{ content }}
+
+  <h4>Publications</h4>
+  <ul>
+    {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+    {% for post in filtered_posts %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
