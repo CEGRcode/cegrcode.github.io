@@ -16,3 +16,6 @@ plugins:
 # Custom vars
 github: https://github.com/CEGRcode
 twitter: https://twitter.com/ThePughLab
+
+# google analytics
+google_analytics: UA-104503525-2
