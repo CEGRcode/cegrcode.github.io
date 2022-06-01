@@ -1,0 +1,244 @@
+{
+ "publications": [
+  {
+   "name": "Genome-wide promoter assembly in E. coli measured at single-base resolution.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/35483960/",
+   "author": "John J, Jabbar J, Badjatia N, Rossi MJ, Lai WKM, Pugh BF."
+  },
+  {
+   "name": "PEGR: a flexible management platform for reproducible epigenomic and genomic research.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/35440038/",
+   "author": "Shao D, Kellogg GD, Nematbakhsh A, Kuntala PK, Mahony S, Pugh BF, Lai WKM."
+  },
+  {
+   "name": "STENCIL: A web templating engine for visualizing and sharing life science datasets.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/35139076/",
+   "author": "Sun Q, Nematbakhsh A, Kuntala PK, Kellogg G, Pugh BF, Lai WKM."
+  },
+  {
+   "name": "Ssl2/TFIIH function in transcription start site scanning by RNA polymerase II in Saccharomyces cerevisiae.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/34652274/",
+   "author": "Zhao T, Vvedenskaya IO, Lai WK, Basu S, Pugh BF, Nickels BE, Kaplan CD."
+  },
+  {
+   "name": "A ChIP-exo screen of 887 Protein Capture Reagents Program transcription factor antibodies in human cells.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/34426512/",
+   "author": "Lai WKM, Mariani L, Rothschild G, Smith ER, Venters BJ, Blanda TR, Kuntala PK, Bocklund K, Mairose J, Dweikat SN, Mistretta K, Rossi MJ, James D, Anderson JT, Phanor SK, Zhang W, Zhao Z, Shah AP, Novitzky K, McAnarney E, Keogh MC, Shilatifard A, Basu U, Bulyk ML, Pugh BF."
+  },
+  {
+   "name": "What do Transcription Factors Interact With?.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/33621520/",
+   "author": "Chen H, Pugh BF."
+  },
+  {
+   "name": "Protein architecture of the yeast genome.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/34021291/",
+   "author": "Pugh BF."
+  },
+  {
+   "name": "A high-resolution protein architecture of the budding yeast genome.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/33692541/",
+   "author": "Rossi MJ, Kuntala PK, Lai WKM, Yamada N, Badjatia N, Mittal C, Kuzu G, Bocklund K, Farrell NP, Blanda TR, Mairose JD, Basting AV, Mistretta KS, Rocco DJ, Perkinson ES, Kellogg GD, Mahony S, Pugh BF."
+  },
+  {
+   "name": "Acute stress drives global repression through two independent RNA polymerase II stalling events in Saccharomyces.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/33472084/",
+   "author": "Badjatia N, Rossi MJ, Bataille AR, Mittal C, Lai WKM, Pugh BF."
+  },
+  {
+   "name": "Alignment and quantification of ChIP-exo crosslinking patterns reveal the spatial organization of protein-DNA complexes.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/32747934/",
+   "author": "Yamada N, Rossi MJ, Farrell N, Pugh BF, Mahony S."
+  },
+  {
+   "name": "Actin R256 Mono-methylation Is a Conserved Post-translational Modification Involved in Transcription.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/32997990/",
+   "author": "Kumar A, Zhong Y, Albrecht A, Sang PB, Maples A, Liu Z, Vinayachandran V, Reja R, Lee CF, Kumar A, Chen J, Xiao J, Park B, Shen J, Liu B, Person MD, Trybus KM, Zhang KYJ, Pugh BF, Kamm KE, Milewicz DM, Shen X, Kapoor P."
+  },
+  {
+   "name": "Universal promoter scanning by Pol II during transcription initiation in Saccharomyces cerevisiae.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/32487207/",
+   "author": "Qiu C, Jin H, Vvedenskaya I, Llenas JA, Zhao T, Malik I, Visbisky AM, Schwartz SL, Cui P, Čabart P, Han KH, Lai WKM, Metz RP, Johnson CD, Sze SH, Pugh BF, Nickels BE, Kaplan CD."
+  },
+  {
+   "name": "Phase separation directs ubiquitination of gene-body nucleosomes.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/32214243/",
+   "author": "Gallego LD, Schneider M, Mittal C, Romanauska A, Gudino Carrillo RM, Schubert T, Pugh BF, Köhler A."
+  },
+  {
+   "name": "ChExMix: A Method for Identifying and Classifying Protein-DNA Interaction Subtypes.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/32023130/",
+   "author": "Yamada N, Kuntala PK, Pugh BF, Mahony S."
+  },
+  {
+   "name": "Proneural factors Ascl1 and Neurog2 contribute to neuronal subtype identities by establishing distinct chromatin landscapes.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/31086315/",
+   "author": "Aydin B, Kakumanu A, Rossillo M, Moreno-Estellés M, Garipler G, Ringstad N, Flames N, Mahony S, Mazzoni EO."
+  },
+  {
+   "name": "Characterizing protein-DNA binding event subtypes in ChIP-exo data.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/30165373/",
+   "author": "Yamada N, Lai WKM, Farrell N, Pugh BF, Mahony S."
+  },
+  {
+   "name": "In vivo genome-wide binding interactions of mouse and human constitutive androstane receptors reveal novel gene targets.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/30102401/",
+   "author": "Niu B, Coslo DM, Bataille AR, Albert I, Pugh BF, Omiecinski CJ."
+  },
+  {
+   "name": "Simplified ChIP-exo assays.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/30030442/",
+   "author": "Rossi MJ, Lai WKM, Pugh BF."
+  },
+  {
+   "name": "Genome-wide determinants of sequence-specific DNA binding of general regulatory factors.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/29563167/",
+   "author": "Rossi MJ, Lai WKM, Pugh BF."
+  },
+  {
+   "name": "The SAGA/TREX-2 subunit Sus1 binds widely to transcribed genes and affects mRNA turnover globally.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/29598828/",
+   "author": "García-Molinero V, García-Martínez J, Reja R, Furió-Tarí P, Antúnez O, Vinayachandran V, Conesa A, Pugh BF, Pérez-Ortín JE, Rodríguez-Navarro S."
+  },
+  {
+   "name": "Widespread and precise reprogramming of yeast protein-genome interactions in response to heat shock.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/29444801/",
+   "author": "Vinayachandran V, Reja R, Rossi MJ, Park B, Rieber L, Mittal C, Mahony S, Pugh BF."
+  },
+  {
+   "name": "Genome-Wide Mapping of Decay Factor-mRNA Interactions in Yeast Identifies Nutrient-Responsive Transcripts as Targets of the Deadenylase Ccr4.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/29158339/",
+   "author": "Miller JE, Zhang L, Jiang H, Li Y, Pugh BF, Reese JC."
+  },
+  {
+   "name": "Understanding nucleosome dynamics and their links to gene expression and DNA replication.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/28537572/",
+   "author": "Lai WKM, Pugh BF."
+  },
+  {
+   "name": "Correspondence: DNA shape is insufficient to explain binding.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/28580956/",
+   "author": "Rossi MJ, Lai WKM, Pugh BF."
+  },
+  {
+   "name": "Genome-wide uniformity of human 'open' pre-initiation complexes.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/27927716/",
+   "author": "Lai WK, Pugh BF."
+  },
+  {
+   "name": "The Histone Modification Domain of Paf1 Complex Subunit Rtf1 Directly Stimulates H2B Ubiquitylation through an Interaction with Rad6.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/27840029/",
+   "author": "Van Oss SB, Shirra MK, Bataille AR, Wier AD, Yen K, Vinayachandran V, Byeon IL, Cucinotta CE, Héroux A, Jeon J, Kim J, VanDemark AP, Pugh BF, Arndt KM."
+  },
+  {
+   "name": "Tail and Kinase Modules Differently Regulate Core Mediator Recruitment and Function In Vivo.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/27773677/",
+   "author": "Jeronimo C, Langelier MF, Bataille AR, Pascal JM, Pugh BF, Robert F."
+  },
+  {
+   "name": "Genomic Nucleosome Organization Reconstituted with Pure Proteins.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/27768892/",
+   "author": "Krietenstein N, Wal M, Watanabe S, Park B, Peterson CL, Pugh BF, Korber P."
+  },
+  {
+   "name": "Structural evidence for Nap1-dependent H2A-H2B deposition and nucleosome assembly.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/27225933/",
+   "author": "Aguilar-Gurrieri C, Larabi A, Vinayachandran V, Patel NA, Yen K, Reja R, Ebong IO, Schoehn G, Robinson CV, Pugh BF, Panne D."
+  },
+  {
+   "name": "The Pioneer Transcription Factor FoxA Maintains an Accessible Nucleosome Configuration at Enhancers for Tissue-Specific Gene Activation.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/27058788/",
+   "author": "Iwafuchi-Doi M, Donahue G, Kakumanu A, Watts JA, Mahony S, Pugh BF, Lee D, Kaestner KH, Zaret KS."
+  },
+  {
+   "name": "RNA Polymerase II Regulates Topoisomerase 1 Activity to Favor Efficient Transcription.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/27058666/",
+   "author": "Baranello L, Wojtowicz D, Cui K, Devaiah BN, Chung HJ, Chan-Salis KY, Guha R, Wilson K, Zhang X, Zhang H, Piotrowski J, Thomas CJ, Singer DS, Pugh BF, Pommier Y, Przytycka TM, Kouzine F, Lewis BA, Zhao K, Levens D."
+  },
+  {
+   "name": "Genomic Organization of Human Transcription Initiation Complexes.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/26866362/",
+   "author": "Pugh BF, Venters BJ."
+  },
+  {
+   "name": "Genome-wide nucleosome specificity and function of chromatin remodellers in ES cells.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/26814966/",
+   "author": "de Dieuleveult M, Yen K, Hmitou I, Depaux A, Boussouar F, Bou Dargham D, Jounier S, Humbertclaude H, Ribierre F, Baulard C, Farrell NP, Park B, Keime C, Carrière L, Berlivet S, Gut M, Gut I, Werner M, Deleuze JF, Olaso R, Aude JC, Chantalat S, Pugh BF, Gérard M."
+  },
+  {
+   "name": "Genome-Wide Organization of GATA1 and TAL1 Determined at High Resolution.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/26503782/",
+   "author": "Han GC, Vinayachandran V, Bataille AR, Park B, Chan-Salis KY, Keller CA, Long M, Mahony S, Hardison RC, Pugh BF."
+  },
+  {
+   "name": "Molecular mechanisms of ribosomal protein gene coregulation.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/26385964/",
+   "author": "Reja R, Vinayachandran V, Ghosh S, Pugh BF."
+  },
+  {
+   "name": "The Nuclear Pore-Associated TREX-2 Complex Employs Mediator to Regulate Gene Expression.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/26317468/",
+   "author": "Schneider M, Hellerschmied D, Schubert T, Amlacher S, Vinayachandran V, Reja R, Pugh BF, Clausen T, Köhler A."
+  },
+  {
+   "name": "Protein-DNA binding in high-resolution.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/26038153/",
+   "author": "Mahony S, Pugh BF."
+  },
+  {
+   "name": "ATF4 Gene Network Mediates Cellular Response to the Anticancer PAD Inhibitor YW3-56 in Triple-Negative Breast Cancer Cells.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/25612620/",
+   "author": "Wang S, Chen XA, Hu J, Jiang JK, Li Y, Chan-Salis KY, Gu Y, Chen G, Thomas C, Pugh BF, Wang Y."
+  },
+  {
+   "name": "Subnucleosomal structures and nucleosome asymmetry across a genome.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/25480300/",
+   "author": "Rhee HS, Bataille AR, Zhang L, Pugh BF."
+  },
+  {
+   "name": "Retraction: Genomic organization of human transcription initiation complexes.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/25079311/",
+   "author": "Venters BJ, Pugh BF."
+  },
+  {
+   "name": "A comprehensive and high-resolution genome-wide response of p53 to stress.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/25043190/",
+   "author": "Chang GS, Chen XA, Park B, Rhee HS, Li P, Han KH, Mishra T, Chan-Salis KY, Li Y, Hardison RC, Wang Y, Pugh BF."
+  },
+  {
+   "name": "Genomic organization of human transcription initiation complexes.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/24048476/",
+   "author": "Venters BJ, Pugh BF."
+  },
+  {
+   "name": "SWR-C and INO80 chromatin remodelers recognize nucleosome-free regions near +1 nucleosomes.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/24034248/",
+   "author": "Yen K, Vinayachandran V, Pugh BF."
+  },
+  {
+   "name": "Kinetic competition between elongation rate and binding of NELF controls promoter-proximal pausing.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/23746353/",
+   "author": "Li J, Liu Y, Rhee HS, Ghosh SK, Bai L, Pugh BF, Gilmour DS."
+  },
+  {
+   "name": "A genome-wide map of CTCF multivalency redefines the CTCF code.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/23707059/",
+   "author": "Nakahashi H, Kieffer Kwon KR, Resch W, Vian L, Dose M, Stavreva D, Hakim O, Pruett N, Nelson S, Yamane A, Qian J, Dubois W, Welsh S, Phair RD, Pugh BF, Lobanenkov V, Hager GL, Casellas R."
+  },
+  {
+   "name": "Molecular biology: The ends justify the means.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/23615607/",
+   "author": "Pugh BF."
+  },
+  {
+   "name": "ChIP-exo method for identifying genomic location of DNA-binding proteins with near-single-nucleotide accuracy.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/23026909/",
+   "author": "Rhee HS, Pugh BF."
+  },
+  {
+   "name": "The linker histone plays a dual role during gametogenesis in Saccharomyces cerevisiae.",
+   "url": "https://www.ncbi.nlm.nih.gov/pubmed/22586276/",
+   "author": "Bryant JM, Govin J, Zhang L, Donahue G, Pugh BF, Berger SL."
+  }
+ ]
+}
