@@ -1,5 +1,5 @@
   <nav class="nav d-flex align-items-center">
-    <!-- iterate over each item in the _data/navigation.yml file -->
+    <!--iterate over each item in the _data/navigation.yml file-->
     {% for item in site.data.navigation %}
       <a href="{{ item.link }}"
         {% if page.url == item.link %}
@@ -9,3 +9,6 @@
       </a>
     {% endfor %}
   </nav>
+
+
+    

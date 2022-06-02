@@ -12,6 +12,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-gist
 
 # Custom vars
 github: https://github.com/CEGRcode
