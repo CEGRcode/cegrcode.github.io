@@ -7,21 +7,108 @@ title: Publications
 
     <!-- Section -->
     <div>
-      <h4>Preprints</h4>
+      <h4>Publications</h4>
 
       <div class="publication">
-        <h5>Screening of PCRP transcription factor antibodies in biochemical assays</h5>
+        <h5>Genome-wide promoter assembly in E. coli measured at single-base resolution.</h5>
         <small>
-          William K. M. Lai, Luca Mariani, Gerson Rothschild, Edwin R. Smith, Bryan J. Venters, Thomas R. Blanda, Prashant K. Kuntala, Kylie Bocklund, Joshua Mairose, Sarah N Dweikat, Katelyn Mistretta, Matthew J. Rossi, Daniela James, James T. Anderson, Sabrina K. Phanor, Wanwei Zhang, Avani P. Shaw, Katherine Novitzky, Eileen McAnarney, Michael-C. Keogh, Ali Shilatifard, Uttiya Basu, Martha L. Bulyk, B. Franklin Pugh
+          John J, Jabbar J, Badjatia N, Rossi MJ, Lai WKM, Pugh BF.
         </small>
         <hr>
         <div class="d-flex">
-          <a class="publinks" href="http://odin.cac.cornell.edu/pcrp/" title="project website" ><i class="fas fa-external-link-alt"></i></a>
-          <a class="publinks" href="https://doi.org/10.1101/2020.06.08.140046" title="pubmed link"><i class="fas fa-file-pdf"></i></a>
+          <a class="publinks" href="https://pubmed.ncbi.nlm.nih.gov/35483960/" title="pubmed link" ><i class="fas fa-external-link-alt"></i></a>
+          <a class="publinks" href="https://genome.cshlp.org/content/32/5/878.long" title="journal link"><i class="fas fa-file-pdf"></i></a>
         </div>
       </div>
 
+      <div class="publication">
+        <h5>PEGR: a flexible management platform for reproducible epigenomic and genomic research.</h5>
+        <small>
+          Shao D, Kellogg GD, Nematbakhsh A, Kuntala PK, Mahony S, Pugh BF, Lai WKM.
+        </small>
+        <hr>
+        <div class="d-flex">
+          <a class="publinks" href="https://pubmed.ncbi.nlm.nih.gov/35440038/" title="pubmed link" ><i class="fas fa-external-link-alt"></i></a>
+          <a class="publinks" href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02671-5" title="journal link"><i class="fas fa-file-pdf"></i></a>
+        </div>
+      </div>
+
+      <div class="publication">
+        <h5>STENCIL: A web templating engine for visualizing and sharing life science datasets. </h5>
+        <small>
+          Sun Q, Nematbakhsh A, Kuntala PK, Kellogg G, Pugh BF, Lai WKM.
+        </small>
+        <hr>
+        <div class="d-flex">
+          <a class="publinks" href="https://pubmed.ncbi.nlm.nih.gov/35139076/" title="pubmed link" ><i class="fas fa-external-link-alt"></i></a>
+          <a class="publinks" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009859" title="journal link"><i class="fas fa-file-pdf"></i></a>
+        </div>
+      </div>
+
+      <div class="publication">
+        <h5>Ssl2/TFIIH function in transcription start site scanning by RNA polymerase II in Saccharomyces cerevisiae.</h5>
+        <small>
+          Zhao T, Vvedenskaya IO, Lai WK, Basu S, Pugh BF, Nickels BE, Kaplan CD.
+        </small>
+        <hr>
+        <div class="d-flex">
+          <a class="publinks" href="https://pubmed.ncbi.nlm.nih.gov/34652274/" title="pubmed link" ><i class="fas fa-external-link-alt"></i></a>
+          <a class="publinks" href="https://elifesciences.org/articles/71013" title="journal link"><i class="fas fa-file-pdf"></i></a>
+        </div>
+      </div>
+
+      <div class="publication">
+        <h5>A ChIP-exo screen of 887 Protein Capture Reagents Program transcription factor antibodies in human cells.</h5>
+        <small>
+          Lai WKM, Mariani L, Rothschild G, Smith ER, Venters BJ, Blanda TR, Kuntala PK, Bocklund K, Mairose J, Dweikat SN, Mistretta K, Rossi MJ, James D, Anderson JT, Phanor SK, Zhang W, Zhao Z, Shah AP, Novitzky K, McAnarney E, Keogh MC, Shilatifard A, Basu U, Bulyk ML, Pugh BF.
+        </small>
+        <hr>
+        <div class="d-flex">
+          <a class="publinks" href="https://pubmed.ncbi.nlm.nih.gov/34426512/" title="pubmed link" ><i class="fas fa-external-link-alt"></i></a>
+          <a class="publinks" href="https://genome.cshlp.org/content/31/9/1663.long" title="journal link"><i class="fas fa-file-pdf"></i></a>
+        </div>
+      </div>
+
+
+      <!--div class="publication">
+        {% for publication in site.data.publications.publications %}
+        {% assign namefive = publicaiton.name[5] %}
+        {% assign authorfive = publicaiton.author[5] %}
+        <h5>{{ publication.name}}</h5>
+        <small>
+          {{ publication.author }}
+        </small>
+        <hr>
+        <div class="d-flex">
+          <a class="publinks" href="{{ publication.url }}" title="project website" ><i class="fas fa-external-link-alt"></i></a>
+          <a class="publinks" href="https://doi.org/10.1101/2020.06.08.140046" title="pubmed link"><i class="fas fa-file-pdf"></i></a>
+        </div>
+        <hr>
+        {% endfor %}
+      </div-->
+
+      <!--div class="publication">
+        {% for publication in site.data.publications.publications %}
+        <h5>{{ publication.name1 }}</h5>
+        {% endfor %}
+        {% for publication in site.data.publications.publications %}
+        <small>
+          {{ publication.author1 }}
+        </small>
+        {% endfor %}
+        <hr>
+        <div class="d-flex">
+          <a class="publinks" href="{{ publication.url1 }}" title="project website" ><i class="fas fa-external-link-alt"></i></a>
+          <a class="publinks" href="https://doi.org/10.1101/2020.06.08.140046" title="pubmed link"><i class="fas fa-file-pdf"></i></a>
+        </div>
+      </div-->
+
     </div>
+    <!--ul>
+      {% for publication in site.data.publications.publications %}
+        <li>{{ publication.name }}</li>
+      {% endfor %}
+    </ul-->
 
     <!-- Section -->
     <!-- <div class="">
