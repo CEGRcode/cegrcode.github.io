@@ -1,11 +1,16 @@
 // General Styles
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+}
 html, body{
   background: #F7F7F7;
-  font-family: 'Roboto Slab', Georgia, serif;
+  // font-family: 'Roboto Slab', Georgia, serif;
 }
-
-a{color: #006699;}
+p{
+  font-weight: 300;
+}
+// a{color: #006699;}
 
 .current {
   color: #B71B1B;
@@ -15,23 +20,99 @@ a{color: #006699;}
 
 .container{
   background: #fff;
+  // min-height: 60vh;
 }
 
 nav {
-  padding: 10px;
-  background: #F7F7F7;
+  padding: 30px;
+  background: #ffffff;
+}
+
+.lab_logo{
+  transform: scale(0.8);
+  // margin-left: -3px;
 }
 
 nav a{
+  font-size: 18px;
+  font-weight: 300;
   text-decoration: none;
   margin-left: 20px;
   color: black;
 }
 
-a:hover{
-  text-decoration: none;
+//a setting
+a{
   color: black;
 }
+a:hover{
+  text-decoration: none;
+  color: #B71B1B;
+}
+
+//header
+.py-3{
+  position: relative;
+  max-height:450px;
+  overflow: hidden;
+  background-color: black;
+}
+.bg-img{
+  transform: translateY(-30%);
+  max-width: 100%;
+  opacity: 0.5;
+}
+.header-content{
+  width: 100%;
+  padding:35px;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+.text-left{
+  max-width: 100%;
+  margin-left: 5px;
+  color: white;
+}
+.text-left a{
+  color: white;
+  text-decoration: none;
+}
+.text-left h1{
+  font-size: 46px;
+  font-weight: 900;
+}
+.cornell-logo{
+  max-width: 60%;
+}
+.mb-2{
+padding: 50px;
+// border: #222222 5px solid;
+}
+.card-index{
+  // max-width:22rem;
+  // min-width: 18rem;
+  // max-height: 28rem;
+  padding:10px 10px 20px 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.081);
+}
+.card-img-top{
+  max-width: 60%;
+}
+.card-text{
+  font-size: 14px;
+}
+.epigenome-img{
+  width: 100%;
+  padding: 10px 0px 50px 0px;
+}
+
+.slide-images{
+  border-radius: 20px;
+}
+
 /*.arrow {
   -webkit-transition-duration: 1s;
       -moz-transition-duration: 1s;
@@ -51,9 +132,24 @@ a:hover{
   }*/
   
 // footer styles
-.footer-logo{
-  border-radius: 20px;
-  border: 1px solid #222222;
+.container-footer{
+  padding: 40px;
+  background-color: #313131;
+  color: white;
+}
+.footer-text-left{
+  margin-left: 15px;
+}
+.quick-links{
+  padding-top: 10px;
+}
+.quick-links li {
+margin-top: 10px;
+}
+.footer-links{
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
 }
 
 .social-icons{
@@ -66,21 +162,74 @@ a:hover{
   color: #B71B1B;
 }
 
-// publications styles
-.publication{
-  border: 1px solid #9FAD9F;
-  border-radius: 4px;
-  padding: 8px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  line-height: normal;
-}
-.publinks{
-  font-size: 16px;
-  margin-left: 5px;
-  padding-right : 5px;
+
+//GROUP
+
+
+.media-body{
+  margin-top: 20px;
 }
 
+.mt-0 {
+  font-size: 14px;
+}
+.mr-3{
+  height:300px;
+  width:225px;
+  filter: grayscale(100%);
+}
+
+.mr-3:hover{
+  filter: grayscale(0%);
+  transition: 0.5s;
+}
+.mr-3-main{
+  height:350px;
+  width:262.5px;
+  filter: grayscale(100%);
+}
+.mr-3-main:hover{
+  filter: grayscale(0%);
+  transition: 0.5s;
+}
+// publications styles
+.margin-top-40{
+  margin-top: 40px;
+}
+.margin-top-20{
+  margin-top: 20px;
+}
+.publication-container{
+  padding: 20px;
+}
+.publication{
+  margin-top: 40px;
+}
+.number{
+  // border: #313131 1px solid;
+  width: 5%;
+}
+.publinks{
+  padding: 1px 5px 1px 5px;
+  border: #B71B1B 0.5px solid;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-size: 12px;
+  margin-left: 5px;
+  padding-right : 5px;
+  color: #B71B1B;
+}
+.publinks:hover{
+  background-color: #B71B1B;
+  color: white;
+}
+.NCBI{
+  color: #B71B1B;
+}
+/*Resources*/
+.Resources-container{
+  padding: 20px;
+}
 /* Slideshow Styles */
 img {vertical-align: middle;}
 
@@ -154,10 +303,97 @@ img {vertical-align: middle;}
 .active, .dot:hover {
   background-color: #717171;
 }
-
+/*publicaiton style*/
+.resources-icon{
+  width:90%;
+  margin-top: 15px;
+}
+.resource-link{
+  color: #B71B1B;
+}
 /* On smaller screens, decrease text size */
+@media (max-width: 1400px){
+  .bg-img{
+    transform: translateY(-20%);
+  }
+  .card-index{
+    transform:scale(0.9);
+  }
+  .mb-2{
+    padding: 0px;
+  }
+}
+
+@media (max-width: 1200px){
+  .bg-img{
+    transform: translateY(0%);
+    transform:scale(1.05);
+  }
+  .cornell-logo{
+    max-width: 75%;
+  }
+  .mb-2{
+    padding: 0px;
+  }
+  .frank-text{
+  margin-top: 20px;
+  }
+  
+}
+
+@media (max-width: 992px){
+  .bg-img{
+    transform: translateY(0%);
+    transform:scale(1.2);
+  }
+  .cornell-logo{
+    max-width: 90%;
+  }
+  .text-left h1{
+font-size: 28px;
+  }
+  .text-left p{
+    font-size: 12px;
+  }
+  .mb-2{
+    padding: 0px;
+  }
+  .card-img-top{
+    max-width: 30%;
+  }
+  .card-text{
+    font: 16px;
+  }
+}
+
+@media (max-width: 937px){
+.card{
+  padding: 0px;
+}
+.mb-2{
+  padding: 0px;
+}
+.link-container{
+  margin-top: 20px;
+}
+}
+
+@media (max-width:767px){
+  .cornell-logo{
+    max-width: 100%;
+  }
+  .text-left h1{
+ font-size: 28px;
+  }
+  .text-left p{
+    font-size: 10px;
+  }
+}
+
+
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+  
 }
 
 /* stylelint-disable selector-list-comma-newline-after */
