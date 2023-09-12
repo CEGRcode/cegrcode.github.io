@@ -124,13 +124,13 @@ padding: 50px;
       transition-property: transform;
     outline: 0;
   }
-  
+
   .arrow:focus {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }*/
-  
+
 // footer styles
 .container-footer{
   padding: 40px;
@@ -168,30 +168,25 @@ margin-top: 10px;
 
 .media-body{
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .mt-0 {
   font-size: 14px;
 }
-.mr-3{
+.group-member-photo{
   height:300px;
   width:225px;
-  filter: grayscale(100%);
 }
-
-.mr-3:hover{
-  filter: grayscale(0%);
-  transition: 0.5s;
-}
-.mr-3-main{
+.group-pi-photo{
   height:350px;
   width:262.5px;
-  filter: grayscale(100%);
 }
-.mr-3-main:hover{
-  filter: grayscale(0%);
-  transition: 0.5s;
+
+.group-member-dept{
+  height:5%;
 }
+
 // publications styles
 .margin-top-40{
   margin-top: 40px;
@@ -338,7 +333,7 @@ img {vertical-align: middle;}
   .frank-text{
   margin-top: 20px;
   }
-  
+
 }
 
 @media (max-width: 992px){
@@ -393,7 +388,7 @@ font-size: 28px;
 
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
-  
+
 }
 
 /* stylelint-disable selector-list-comma-newline-after */
