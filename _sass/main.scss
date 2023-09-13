@@ -164,15 +164,13 @@ margin-top: 10px;
 
 
 //GROUP
-
+.group-container {
+  padding: 0px 40px 40px 40px;
+}
 
 .media-body{
   margin-top: 20px;
   margin-bottom: 40px;
-}
-
-.mt-0 {
-  font-size: 14px;
 }
 .group-member-photo{
   height:300px;
@@ -182,9 +180,17 @@ margin-top: 10px;
   height:350px;
   width:262.5px;
 }
-
+.group-pi-blurb{
+  font-size:18px;
+}
 .group-member-dept{
   height:5%;
+}
+.group-member-subcontainer{
+  height:210px;
+}
+.group-member-blurb{
+  font-size: 14px;
 }
 
 // publications styles
@@ -195,7 +201,7 @@ margin-top: 10px;
   margin-top: 20px;
 }
 .publication-container{
-  padding: 20px;
+  padding: 0px 40px 40px 40px;
 }
 .publication{
   margin-top: 40px;
