@@ -10,6 +10,10 @@ html, body{
 p{
   font-weight: 300;
 }
+
+hr{
+  width: 100%;
+}
 // a{color: #006699;}
 
 .current {
@@ -163,14 +167,28 @@ margin-top: 10px;
 }
 
 
-//GROUP
+// group.html styles
 .group-container {
   padding: 0px 40px 40px 40px;
 }
 
-.media-body{
+.media-body {
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+.group-pi-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  column-gap: 30px;
+}
+.group-pi-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
 }
 .group-member-photo{
   height:300px;
@@ -183,8 +201,26 @@ margin-top: 10px;
 .group-pi-blurb{
   font-size:18px;
 }
+
+.group-allmembers-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.group-member-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-basis: 350px;
+  flex-grow: 1;
+}
+
 .group-member-dept{
-  height: 60px;
+  height: 50px;
 }
 .group-member-blurb{
   font-size: 14px;
@@ -333,10 +369,6 @@ img {vertical-align: middle;}
   .mb-2{
     padding: 0px;
   }
-  .frank-text{
-  margin-top: 20px;
-  }
-
 }
 
 @media (max-width: 992px){
@@ -362,18 +394,24 @@ font-size: 28px;
   .card-text{
     font: 16px;
   }
+
+  // group.html styles
+  .group-pi-container {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
 }
 
 @media (max-width: 937px){
-.card{
-  padding: 0px;
-}
-.mb-2{
-  padding: 0px;
-}
-.link-container{
-  margin-top: 20px;
-}
+  .card{
+    padding: 0px;
+  }
+  .mb-2{
+    padding: 0px;
+  }
+  .link-container{
+    margin-top: 20px;
+  }
 }
 
 @media (max-width:767px){
@@ -381,7 +419,7 @@ font-size: 28px;
     max-width: 100%;
   }
   .text-left h1{
- font-size: 28px;
+    font-size: 28px;
   }
   .text-left p{
     font-size: 10px;
@@ -391,7 +429,6 @@ font-size: 28px;
 
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
-
 }
 
 /* stylelint-disable selector-list-comma-newline-after */

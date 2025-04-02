@@ -7,12 +7,11 @@ title: Group
   <h3>Our Team</h3>
   <hr />
   <br />
-  <div>
-    <div class="row">
-      <div class="col-xxl-3 col-xl-4">
-        <img src="./assets/images/Frank_Pugh.jpg" alt="frank" class="group-pi-photo" />
-      </div>
-      <div class="col-xxl-9 col-xl-8 align-self-center frank-text">
+  <!--Principal Investigator-->
+  <div class="group-pi-container">
+      <img src="./assets/images/group-profile/Frank_Pugh.jpg" alt="frank" class="group-pi-photo" />
+      <div class="group-pi-content">
+      <!-- <div class="col-xxl-9 col-xl-8 align-self-center frank-text"> -->
         <h4>Frank Pugh, PhD</h4>
         <hr />
         <h5>Principal Investigator</h5>
@@ -33,501 +32,57 @@ title: Group
           </a>
         </large>
       </div>
-    </div>
   </div>
   <br />
   <br />
-  <div class="row">
-    <!--STAFF-->
-
-    <!--Anne-->
-    <div class="col-xxl-4 col-xl-6 col-lg-6">
-      <h5>Anne Gardner, PhD</h5>
+  <!-- MEMBERS (Staff, Postdocs, Graduates students) -->
+  <!-- To update, add and remove members from the _data/groupinfo.yml file -->
+  <!-- Note: order of inclusion in .yml files affect how the page is populated (left to right, top to bottom) -->
+  <!-- Note: CV and website are optional fields -->
+  <!-- Note: Need to commit profile picture/image and CV to appropriate assets subdirectory before pushing changes -->
+  <div class="group-allmembers-container">
+    {% for item in site.data.groupinfo %}
+      <div class="group-member-container">
+        <h5>{{ item.name }}</h5>
       <hr />
       <div class="group-member-dept">
-        <p><strong>Lab Manager</strong></p>
+        <p><strong>{{ item.title }}</strong></p>
       </div>
-      <img src="./assets/images/Anne_Gardner.jpg" alt="anne" class="group-member-photo" />
+      <img src="{{ item.imglink }}" alt="{{ item.imgalt }}" class="group-member-photo" />
       <div class="media-body">
         <p class="group-member-blurb">
-            Anne Gardner joined the Pugh lab in 2021 as Lab Manager. She is
-            excited to be back at Cornell where she completed her
-            undergraduate in Biology. She earned her PhD in Immunology at Duke
-            University on immunoglobulin intracellular transport during B cell
-            differentiation and did a postdoctoral fellowship at National
-            Jewish Immunology focusing on MAP kinase signal transduction
-            pathways.
+          {{ item.blurb }}
         </p>
         <small>
-          <strong>location:</strong> 467 Biotechnology Building
+          <strong>location:</strong> {{ item.location }}
           <br />
-          <strong>email:</strong> amg246@cornell.edu
+          <strong>email:</strong> {{ item.email }}
+          {% if item.cvlink %}
           <br />
           <strong>CV:</strong>
-          <a href="assets/docs/AnneGardner_CV.pdf" download>
+          <a href="{{ item.cvlink }}" download>
             <i class="fas fa-file-pdf"></i>
           </a>
-        </small>
-      </div>
-      &nbsp;
-    </div>
-    <!--Josh-->
-    <div class="col-xxl-4 col-xl-6 col-lg-6">
-      <h5>Joshua Wendall</h5>
-      <hr />
-      <div class="group-member-dept">
-        <p><strong>Lab Technician</strong></p>
-      </div>
-      <img src="./assets/images/Joshua_Wendall.jpg" alt="josh" class="group-member-photo" />
-      <div class="media-body">
-        <p class="group-member-blurb">
-            Josh received his BS in Biology with the Neuroscience option from Penn
-            State, shortly thereafter joining the Pugh Lab in December of 2022.
-            As a technician, he has been exploring the use of mammalian tissue as
-            a substrate for ChIP-exo.
-        </p>
-        <small>
-          <strong>location:</strong> 467 Biotechnology Building
-          <br />
-          <strong>email:</strong> jcw345@cornell.edu
-          <br />
-          <strong>CV:</strong>
-          <a href="assets/docs/JoshuaWendall_CV.pdf" download>
-            <i class="fas fa-file-pdf"></i>
-          </a>
-        </small>
-      </div>
-      &nbsp;
-    </div>
-    <!--Matt-->
-    <div class="col-xxl-4 col-xl-6 col-lg-6">
-      <h5>Matthew McDermott</h5>
-      <hr />
-      <div class="group-member-dept">
-        <p><strong>Lab Technician</strong></p>
-      </div>
-      <img src="./assets/images/Matthew_McDermott.jpg" alt="matt" class="group-member-photo" />
-      <div class="media-body">
-        <p class="group-member-blurb">
-            Matthew received his bachelor's degree in Viticulture and Enology from
-            Cornell University. He is interested in the yeast and bacteria that are
-            responsible for producing beer and wine. Since the production of beer and
-            wine is stressful to yeast, Matthew has been studying where transcription
-            factors are bound to DNA in yeast as a response to different stress factors
-            using ChIP-exo.
-        </p>
-        <small>
-          <strong>location:</strong> 467 Biotechnology Building
-          <br />
-          <strong>email:</strong> mjm763@cornell.edu
-          <br />
-          <!-- <strong>CV:</strong>
-          <a href="assets/docs/JoshuaWendall_CV.pdf" download>
-            <i class="fas fa-file-pdf"></i>
-          </a> -->
-        </small>
-      </div>
-      &nbsp;
-    </div>
-    <!--New Staff go here...-->
-
-
-    <!--POST DOCS-->
-
-    <!--Ruihao-->
-    <div class="col-xxl-4 col-xl-6 col-lg-6">
-      <h5>Ruihao Li, PhD</h5>
-      <hr />
-      <div class="group-member-dept">
-        <p><strong>Post Doctoral Scholar</strong></p>
-      </div>
-      <img src="./assets/images/Ruihao_Li.jpeg" alt="ruihao" class="group-member-photo" />
-      <div class="media-body">
-        <p class="group-member-blurb">
-            Ruihao completed his Bachelor's degree in Life Sciences at Huazhong 
-            University of Science and Technology in 2017. Following this, he 
-            pursued his PhD in Quantitative and Systems Biology at the University 
-            of California, Merced, graduating in 2023. Shortly after, he joined 
-            Pugh's lab as a postdoctoral fellow. He is committed to constructing 
-            mathematical models and developing computational tools to elucidate 
-            the intricate networking between transcription factors and genes.
-        </p>
-        <small>
-          <strong>location:</strong> 467 Biotechnology Building
-          <br />
-          <strong>email:</strong> rl884@cornell.edu
-          <br />
-          <strong>CV:</strong>
-          <a href="assets/docs/RuihaoLi_CV.pdf" download>
-            <i class="fas fa-file-pdf"></i>
-          </a>
-          <!-- <br />
-          <strong>website:</strong>
-          <a href="https://krejord.github.io/" website>
-            <i class="fas fa-link"></i>
-          </a> -->
-        </small>
-      </div>
-      &nbsp;
-    </div>
-    <!--New PostDocs go here...-->
-
-
-    <!--GRAD STUDENTS-->
-
-    <!--Jordan-->
-    <div class="col-xxl-4 col-xl-6 col-lg-6">
-      <h5>Jordan Krebs</h5>
-      <hr />
-      <div class="group-member-dept">
-        <p><strong>Graduate Student (MSTP-Penn State)</strong></p>
-      </div>
-      <img src="./assets/images/Jordan_Krebs.jpeg" alt="jordan" class="group-member-photo" />
-      <div class="media-body">
-        <p class="group-member-blurb">
-            Jordan is a MD/PhD student at Penn State University / Penn State
-            College of Medicine. He is focused on the optimization of ChIP-exo
-            for mammalian cells and tissues in hopes of identifying
-            differential transcription factor binding sites across many
-            tissues and diseases. His work should be instrumental to the
-            inclusion of epigenomics in the field of precision medicine and
-            pathology.
-        </p>
-        <small>
-          <strong>location:</strong> 460 Biotechnology Building
-          <br />
-          <strong>email:</strong> jek369@cornell.edu
-          <br />
-          <strong>CV:</strong>
-          <a href="assets/docs/JordanKrebs_CV.pdf" download>
-            <i class="fas fa-file-pdf"></i>
-          </a>
+          {% endif %}
+          {% if item.website %}
           <br />
           <strong>website:</strong>
-          <a href="https://krejord.github.io/" website>
+          <a href="{{ item.website }}" website>
             <i class="fas fa-link"></i>
           </a>
+          {% endif %}
         </small>
       </div>
       &nbsp;
-    </div>
-    <!--Haining-->
-    <div class="col-xxl-4 col-xl-6 col-lg-6">
-      <h5>Haining Chen</h5>
-      <hr />
-      <div class="group-member-dept">
-        <p><strong>Graduate Student (BMCB)</strong></p>
       </div>
-      <img src="./assets/images/Haining_Chen.png" alt="haining" class="group-member-photo" />
-      <div class="media-body">
-        <p class="group-member-blurb">
-            Haining Chen is a doctoral candidate in the Graduate Field of
-            Biochemistry, Molecular, and Cell Biology (BMCB) Graduate Program at
-            Cornell University. She received her Bachelor's degree in
-            microbiology from Shandong University. In 2019, Haining joined the
-            Pugh lab, and her current research focuses on unraveling the
-            intricate molecular architectures of proteins implicated in
-            transcription initiation and studying how transcription factors
-            regulate gene expression in a cell-type-specific manner.
-        </p>
-        <small>
-          <strong>location:</strong> 460 Biotechnology Building
-          <br />
-          <strong>email:</strong> hc2228@cornell.edu
-          <br />
-          <strong>CV:</strong>
-          <a href="assets/docs/HainingChen_CV.pdf" download>
-            <i class="fas fa-file-pdf"></i>
-          </a>
-          <br />
-          <strong>website:</strong>
-          <a href="https://heninchen.github.io/" website>
-            <i class="fas fa-link"></i>
-          </a>
-        </small>
-      </div>
-      &nbsp;
-    </div>
-    <!--Olivia-->
-    <div class="col-xxl-4  col-xl-6 col-lg-6">
-      <h5>Olivia Lang</h5>
-      <hr />
-      <div class="group-member-dept">
-        <p><strong>Graduate Student (CB)</strong></p>
-      </div>
-      <img src="./assets/images/Olivia_Lang.png" alt="olivia" class="group-member-photo" />
-      <div class="media-body">
-        <p class="group-member-blurb">
-            Olivia received her bachelor's degree in Interdisciplinary
-            Computational Biology from Colby College and then went on to work
-            for The Saccharomyces Genome Database for two years before
-            starting her PhD in Cornell's Computational Biology program. As a
-            member of the Pugh lab, she works on tool development for the data
-            generated from sequencing based assays.
-        </p>
-        <small>
-          <strong>location:</strong> 404 Biotechnology Building
-          <br />
-          <strong>email:</strong> owl8@cornell.edu
-          <br />
-          <strong>CV:</strong>
-          <a href="assets/docs/OliviaLang_CV.pdf" download>
-            <i class="fas fa-file-pdf"></i>
-          </a>
-          <br />
-          <strong>website:</strong>
-          <a href="https://owlang.github.io/" website>
-            <i class="fas fa-link"></i>
-          </a>
-        </small>
-      </div>
-      &nbsp;
-    </div>
-    <!--Justin-->
-    <div class="col-xxl-4  col-xl-6 col-lg-6">
-      <h5>Justin Cha</h5>
-      <hr />
-      <div class="group-member-dept">
-        <p><strong>Graduate Student (CB)</strong></p>
-      </div>
-      <img src="assets/images/Justin_Cha.png" alt="justin" class="group-member-photo" />
-      <div class="media-body">
-        <p class="group-member-blurb">
-            Justin Cha is a PhD student in the Computational Biology Program.
-            He received his bachelor's degree in Biomedical Engineering at the
-            Georgia Institute of Technology before working as an Associate
-            Computational Biologist in the Getz Lab at the Broad Institute.
-            For the Pugh lab, he works on software development and
-            high-throughput computing (HTC) for the analysis of sequencing
-            data.
-        </p>
-        <small>
-          <strong>location:</strong> 460A Biotechnology Building
-          <br />
-          <strong>email:</strong> jsc333@cornell.edu
-          <br />
-          <strong>CV:</strong>
-          <a href="assets/docs/JustinCha_CV.pdf" download>
-            <i class="fas fa-file-pdf"></i>
-          </a>
-          <br />
-          <strong>website:</strong>
-          <a href="https://jcha40.github.io/" website>
-            <i class="fas fa-link"></i>
-          </a>
-        </small>
-      </div>
-      &nbsp;
-    </div>
-    <!--Fred-->
-    <div class="col-xxl-4  col-xl-6 col-lg-6">
-      <h5>Fred Fazan</h5>
-      <hr />
-      <div class="group-member-dept">
-        <p><strong>Graduate Student (PBSB)</strong></p>
-      </div>
-      <img src="assets/images/Frederico_Fazan.jpg" alt="fred" class="group-member-photo" />
-      <div class="media-body">
-        <p class="group-member-blurb">
-            Fred got his BS in Biomedical Sciences from the University of São
-            Paulo and Master's in Pharmacology from the Federal University of São
-            Paulo. He worked as a Research Fellow at the University of Iowa for
-            two years before joining Weill Cornell Graduate School of Medical
-            Sciences PhD program in Physiology, Biophysics and Systems Biology.
-            In the Pugh Lab, he works on the technical development of single cell
-            ChIP-exo.
-        </p>
-        <small>
-          <strong>location:</strong> 460 Biotechnology Building
-          <br />
-          <strong>email:</strong> ff259@cornell.edu
-          <br />
-          <strong>CV:</strong>
-          <a href="assets/docs/FredericoFazan_CV.pdf" download>
-            <i class="fas fa-file-pdf"></i>
-          </a>
-          <!-- <br />
-          <strong>website:</strong>
-          <a href="https://XXXXXXX.github.io/" website>
-            <i class="fas fa-link"></i>
-          </a> -->
-        </small>
-      </div>
-      &nbsp;
-    </div>
-    <!--Rebecca-->
-    <div class="col-xxl-4 col-xl-6 col-lg-6">
-      <h5>Rebecca Soloway</h5>
-      <hr />
-      <div class="group-member-dept">
-        <p><strong>Graduate Student (GGD)</strong></p>
-      </div>
-      <img src="./assets/images/Rebecca_Soloway.jpg" alt="rebecca" class="group-member-photo" />
-      <div class="media-body">
-        <p class="group-member-blurb">
-            Rebecca received a BS in Biology from Cornell University, and has been 
-            working in science communication and conservation biology since 
-            graduation. As a graduate student in the Pugh Lab, she is interested in 
-            gene regulatory networks in yeast.
-        </p>
-        <small>
-          <strong>location:</strong> 460 Biotechnology Building
-          <br />
-          <strong>email:</strong> res336@cornell.edu
-          <br />
-          <strong>CV:</strong>
-          <a href="assets/docs/RebeccaSoloway_CV.pdf" download>
-            <i class="fas fa-file-pdf"></i>
-          </a>
-          <!-- <br />
-          <strong>website:</strong>
-          <a href="https://XXXXXXX.github.io/" website>
-            <i class="fas fa-link"></i>
-          </a> -->
-        </small>
-      </div>
-      &nbsp;
-    </div>
-    <!--Jiayi-->
-    <div class="col-xxl-4 col-xl-6 col-lg-6">
-      <h5>Jiayi Hu</h5>
-      <hr />
-      <div class="group-member-dept">
-        <p><strong>Graduate Student (GGD)</strong></p>
-      </div>
-      <img src="./assets/images/Jiayi_Hu.jpeg" alt="jiayi" class="group-member-photo" />
-      <div class="media-body">
-        <p class="group-member-blurb">
-            Jiayi Hu is a PhD student in the Genetics, Genomics, and Development 
-            Program at Cornell University. She received her bachelor's degree in 
-            Integrated Science at Peking University in China. She joined Pugh lab 
-            in 2024, focusing on understanding the dynamics of epigenomic 
-            architecture by chromatin reconstitution.
-        </p>
-        <small>
-          <strong>location:</strong> 460 Biotechnology Building
-          <br />
-          <strong>email:</strong> jh2792@cornell.edu
-          <br />
-          <strong>CV:</strong>
-          <a href="assets/docs/JiayiHu_CV.pdf" download>
-            <i class="fas fa-file-pdf"></i>
-          </a>
-          <!-- <br />
-          <strong>website:</strong>
-          <a href="https://XXXXXXX.github.io/" website>
-            <i class="fas fa-link"></i>
-          </a> -->
-        </small>
-      </div>
-    </div>
-    <!--Kritika-->
-    <div class="col-xxl-4 col-xl-6 col-lg-6">
-      <h5>Kritika Grover</h5>
-      <hr />
-      <div class="group-member-dept">
-        <p><strong>Graduate Student (CB)</strong></p>
-      </div>
-      <img src="./assets/images/Kritika_Grover.jpeg" alt="kritika" class="group-member-photo" />
-      <div class="media-body">
-        <p class="group-member-blurb">
-            Kritika Grover is a PhD student in the Computational Biology Program at
-            Cornell University. She received her bachelor's degree from the University 
-            of Waterloo in Biochemistry and minored in computing.
-        </p>
-        <small>
-          <strong>location:</strong> 460A Biotechnology Building
-          <br />
-          <strong>email:</strong> kg573@cornell.edu
-          <br />
-          <strong>CV:</strong>
-          <a href="assets/docs/KritikaGrover_CV.pdf" download>
-            <i class="fas fa-file-pdf"></i>
-          </a>
-          <br />
-          <!-- <strong>website:</strong>
-          <a href="https://XXXXXXX.github.io/" website>
-            <i class="fas fa-link"></i>
-          </a> -->
-        </small>
-      </div>
-    </div>
-    <!--Zimo-->
-    <div class="col-xxl-4 col-xl-6 col-lg-6">
-      <h5>Zimo Zhu</h5>
-      <hr />
-      <div class="group-member-dept">
-        <p><strong>Graduate Student (CB)</strong></p>
-      </div>
-      <img src="./assets/images/Zimo_Zhu.jpeg" alt="first" class="group-member-photo" />
-      <div class="media-body">
-        <p class="group-member-blurb">
-            Zimo Zhu is a PhD student in the Computational Biology Program at Cornell
-            University. She received her bachelor's degree from the University of
-            Washington in Molecular, Cellular, and Developmental Biology with a minor in
-            Data Science.
-        </p>
-        <small>
-          <strong>location:</strong> 404 Biotechnology Building
-          <br />
-          <strong>email:</strong> zz863@cornell.edu
-          <br />
-          <strong>CV:</strong>
-          <a href="assets/docs/ZimoZhu_CV.pdf" download>
-            <i class="fas fa-file-pdf"></i>
-          </a>
-          <br />
-          <!-- <strong>website:</strong>
-          <a href="https://XXXXXXX.github.io/" website>
-            <i class="fas fa-link"></i>
-          </a> -->
-        </small>
-      </div>
-    </div>
-    <!--New Students go here...-->
-
-
-    <!--Member Template (copy paste the block below)-->
-
-    <!--First-->
-    <!-- <div class="col-xxl-4 col-xl-6 col-lg-6">
-      <h5>First Last</h5>
-      <hr />
-      <div class="group-member-dept">
-        <p><strong>Position (XXFieldXX)</strong></p>
-      </div>
-      <img src="./assets/images/First_Last.jpeg" alt="first" class="group-member-photo" />
-      <div class="media-body">
-        <p class="group-member-blurb">
-            Lorem ipsum.
-        </p>
-        <small>
-          <strong>location:</strong> 460 Biotechnology Building
-          <br />
-          <strong>email:</strong> NETID@cornell.edu
-          <br />
-          <strong>CV:</strong>
-          <a href="assets/docs/FirstLast_CV.pdf" download>
-            <i class="fas fa-file-pdf"></i>
-          </a>
-          <br />
-          <strong>website:</strong>
-          <a href="https://XXXXXXX.github.io/" website>
-            <i class="fas fa-link"></i>
-          </a>
-        </small>
-      </div>
-    </div> -->
+    {% endfor %}
   </div>
-</div>
-&nbsp;
+  &nbsp;
 
-<!--UNDERGRADS-->
-<div class="group-container undergradstudents">
+  <!--UNDERGRADS-->
   <h4>Undergraduate Students</h4>
   <hr />
   <br />
-  <div class="mr-1 ml-1">
     <table width="100%">
       <tr><td>Benjamin Beer</td><td>'28</td></tr>
       <tr><td>Alima Dean</td><td>'27</td></tr>
@@ -543,13 +98,10 @@ title: Group
       <!--New Undergrads go here...-->
       <!-- <tr><td>First Last</td><td>'2X</td></tr> -->
     </table>
-  </div>
-</div>
 
-&nbsp;
+  &nbsp;
 
 <!--ALUMNI-->
-<div class="group-container alumni">
   <p>
     <button
       class="btn btn-light"
