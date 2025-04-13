@@ -1,36 +1,14 @@
 <div class="rounded my-3">
   <!-- Slideshow container -->
   <div class="slideshow-container">
+
     <!-- Full-width images with number and caption text  -->
-    <div class="mySlides">
-      <img
-        src="assets/images/211208HolidayParty Unicorns.jpg"
-        class="slide-images"
-      />
-      <!-- <div class="numbertext">1 / 4</div>
-      <img src="/assets/images/slide1.png" class="slide-images" />
-      <div class="text">Caption Text</div> -->
-    </div>
-
-    <div class="mySlides">
-      <!-- <div class="numbertext">2 / 4</div> -->
-      <!-- <img src="/assets/images/slide2.png" class="slide-images" /> -->
-      <img src="assets/images/IMG_8865.jpg" class="slide-images" />
-      <!-- <div class="text">Caption Two</div> -->
-    </div>
-
-    <div class="mySlides">
-      <!-- <div class="numbertext">3 / 4</div> -->
-      <img src="assets/images/IMG_4744.jpg" class="slide-images" />
-      <!-- <img src="/assets/images/slide3.png" class="slide-images" /> -->
-      <!-- <div class="text">Caption Three</div> -->
-    </div>
-    <div class="mySlides">
-      <!-- <div class="numbertext">4 / 4</div> -->
-      <!-- <img src="/assets/images/slide4.png" class="slide-images" /> -->
-      <img src="assets/images/IMG_8785.jpg" class="slide-images" />
-      <!-- <div class="text">Caption Text</div> -->
-    </div>
+    <!-- Update carousel by committing images and adding the paths and descriptions to _data/imgcarousel.yml -->
+    {% for item in site.data.imgcarousel %}
+      <div class="mySlides">
+        <img src="{{ item.path }}" class="slide-images" title="{{ item.description }}" />
+      </div>
+    {% endfor %}
 
     <!-- Next and previous buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -39,10 +17,9 @@
 
   <!-- The dots/circles -->
   <div style="text-align: center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
+    {% for item in site.data.imgcarousel %}
+      <span class="dot" onclick="currentSlide({{ forloop.index }})"></span>
+    {% endfor %}
   </div>
 </div>
 
