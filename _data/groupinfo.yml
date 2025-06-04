@@ -70,21 +70,6 @@
   email: hc2228@cornell.edu
   cvlink: assets/docs/HainingChen_CV.pdf
   website: https://heninchen.github.io
-- name: Olivia Lang
-  title: Graduate Student (CB)
-  imglink: ./assets/images/group-profile/Olivia_Lang.png
-  imgalt: olivia
-  blurb: >
-            Olivia received her bachelor's degree in Interdisciplinary
-            Computational Biology from Colby College and then went on to work
-            for The Saccharomyces Genome Database for two years before
-            starting her PhD in Cornell's Computational Biology program. As a
-            member of the Pugh lab, she works on tool development for the data
-            generated from sequencing based assays.
-  location: 404 Biotechnology Building
-  email: owl8@cornell.edu
-  cvlink: assets/docs/OliviaLang_CV.pdf
-  website: https://owlang.github.io
 - name: Justin Cha
   title: Graduate Student (CB)
   imglink: ./assets/images/group-profile/Justin_Cha.png
